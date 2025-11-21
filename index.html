@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Privacy, Memorization, and Copyright in Generative AI – NeurIPS 2025 Tutorial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NeurIPS 2025 tutorial on data privacy, memorization, and copyright in generative AI: practical guidance at the intersection of ML, law, and policy.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-title">NeurIPS 2025 Tutorial</div>
+        <div class="brand-subtitle">Data Privacy, Memorization, and Copyright in Generative AI: A Practical Guide</div>
+      </div>
+      <nav class="nav">
+        <a href="#overview">Overview</a>
+        <a href="#logistics">Logistics</a>
+        <a href="#schedule">Outline</a>
+        <a href="#speakers">Presenters</a>
+        <a href="#panel">Panel</a>
+        <a href="#materials">Materials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Intro -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Data Privacy, Memorization, and Copyright in Generative AI</h1>
+          <p class="hero-subtitle">
+            A practical guide at the intersection of machine learning, law, and policy.
+          </p>
+          <p class="hero-meta">
+            NeurIPS 2025 &middot; San Diego Convention Center, USA<br>
+            Exact date &amp; time: <span class="pill pill-muted">TBA</span>
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary disabled" href="#materials" aria-disabled="true">
+              Slides &amp; notes – coming soon
+            </a>
+            <a class="btn btn-ghost" href="#overview">
+              Learn more about the tutorial
+            </a>
+          </div>
+        </div>
+        <div class="hero-aside">
+          <div class="info-card">
+            <h2>Quick facts</h2>
+            <ul>
+              <li><strong>Conference:</strong> NeurIPS 2025</li>
+              <li><strong>Location:</strong> San Diego, USA</li>
+              <li><strong>Format:</strong> Mixed theory, case law, and hands-on practice</li>
+              <li><strong>Focus:</strong> Privacy attacks, memorization, copyright, and compliance-aware workflows</li>
+            </ul>
+            <p class="small-muted">
+              This site will be updated as the schedule and materials are finalized.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Overview -->
+    <section id="overview" class="section">
+      <div class="container">
+        <h2>Overview</h2>
+        <p>
+          Generative models are trained on vast datasets that often contain personal data and copyrighted
+          content. As lawsuits, regulations, and standards emerge, practitioners increasingly need
+          concrete, technically grounded guidance on how privacy and copyright law interact with the
+          realities of modern model development.
+        </p>
+        <p>
+          This tutorial connects three themes:
+        </p>
+        <ul class="bullet-list">
+          <li><strong>Data privacy:</strong> how membership inference, data extraction, training-data attribution, and unlearning relate to formal privacy notions and real-world regulations.</li>
+          <li><strong>Memorization:</strong> when models remember training data, what that means technically, and how it matters for sensitive data and copyrighted works.</li>
+          <li><strong>Copyright:</strong> how courts and regulators are treating training data, memorization, and outputs, and what this implies for dataset design and model deployment.</li>
+        </ul>
+        <p>
+          We will alternate between technical material (attacks, defenses, measurement, and system design)
+          and legal analysis (doctrines, active cases, and regulatory futures), with a focus on
+          <em>practical</em> workflows that ML researchers, engineers, and policy teams can adopt today.
+        </p>
+      </div>
+    </section>
+
+    <!-- Logistics -->
+    <section id="logistics" class="section section-alt">
+      <div class="container">
+        <h2>Logistics</h2>
+        <div class="two-col">
+          <div>
+            <h3>Conference</h3>
+            <p>
+              <strong>NeurIPS 2025</strong><br>
+              San Diego Convention Center, USA<br>
+              December 2–7, 2025
+            </p>
+            <p class="small-muted">
+              The precise tutorial slot (date, time, and room) will be updated here once the
+              NeurIPS tutorial schedule is finalized.
+            </p>
+          </div>
+          <div>
+            <h3>Intended audience</h3>
+            <ul class="bullet-list">
+              <li>ML researchers and engineers working with large-scale training data</li>
+              <li>Practitioners responsible for safety, policy, or compliance of ML systems</li>
+              <li>Students and researchers interested in privacy, security, and law for generative AI</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tutorial Outline -->
+    <section id="schedule" class="section">
+      <div class="container">
+        <h2>Tutorial outline (tentative)</h2>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-time">Part I</div>
+            <div class="timeline-content">
+              <h3>Foundations: data, privacy, and memorization</h3>
+              <ul class="bullet-list">
+                <li>How generative models are trained in practice: data pipelines, curation, and scale</li>
+                <li>Memorization vs. generalization: what we know empirically and theoretically</li>
+                <li>Privacy attacks: membership inference, attribute inference, and data extraction</li>
+                <li>Threat models and evaluation: what to measure and how</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">Part II</div>
+            <div class="timeline-content">
+              <h3>Copyright and training data</h3>
+              <ul class="bullet-list">
+                <li>How existing doctrines view training on copyrighted data</li>
+                <li>Memorization, style, and similarity in current and pending cases</li>
+                <li>Data provenance, licensing, and documentation practices for ML teams</li>
+                <li>What different regulatory futures could look like and how to prepare</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-time">Part III</div>
+            <div class="timeline-content">
+              <h3>Practical guidance and case studies</h3>
+              <ul class="bullet-list">
+                <li>End-to-end workflows: from data collection to deployment with privacy and copyright in mind</li>
+                <li>Unlearning, takedown, and other mitigation strategies: what they do (and do not) guarantee</li>
+                <li>Interactive examples and discussion with legal and technical experts</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p class="small-muted">
+          The outline will be refined as we integrate the latest technical and legal developments.
+        </p>
+      </div>
+    </section>
+
+    <!-- Presenters -->
+    <section id="speakers" class="section section-alt">
+      <div class="container">
+        <h2>Presenters</h2>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Pratyush Maini</h3>
+            <p class="card-affiliation">
+              Carnegie Mellon University &amp; Datology AI
+            </p>
+            <p>
+              Pratyush works on data-centric AI, with a focus on memorization, data privacy,
+              and training-data attribution in large generative models.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Joseph C. Gratz</h3>
+            <p class="card-affiliation">
+              Partner, Morrison Foerster LLP
+            </p>
+            <p>
+              Joseph is a copyright and AI lawyer whose practice focuses on litigation involving
+              new technologies, including generative AI and online platforms.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>A. Feder Cooper</h3>
+            <p class="card-affiliation">
+              GenLaw Center &middot; Microsoft Research &middot; Stanford &middot; Yale
+            </p>
+            <p>
+              Feder is a co-founder of the GenLaw Center and a researcher working across computer
+              science and law on topics including privacy, memorization, and copyright in generative AI.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panel -->
+    <section id="panel" class="section">
+      <div class="container">
+        <h2>Panel discussion</h2>
+        <p>
+          The tutorial will include a moderated panel where researchers and practitioners discuss
+          emerging issues and open questions around privacy, memorization, and copyright in
+          generative AI systems.
+        </p>
+
+        <div class="card-grid card-grid-panel">
+          <article class="card">
+            <h3>Zachary C. Lipton</h3>
+            <p class="card-affiliation">
+              CMU &amp; Abridge
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Avishwas Chai</h3>
+            <p class="card-affiliation">
+              OpenAI
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Francesca Bonet</h3>
+            <p class="card-affiliation">
+              CISPA Helmholtz Center for Information Security
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>David Atkinson</h3>
+            <p class="card-affiliation">
+              University of Texas at Austin
+            </p>
+          </article>
+        </div>
+
+        <p class="small-muted">
+          Full bios and panel topic details will be added closer to the conference.
+        </p>
+      </div>
+    </section>
+
+    <!-- Materials -->
+    <section id="materials" class="section section-alt">
+      <div class="container">
+        <h2>Tutorial materials</h2>
+
+        <div class="materials-grid">
+          <div class="materials-column">
+            <h3>Core materials</h3>
+            <ul class="resource-list">
+              <li>
+                <span>Slides (all parts)</span>
+                <span class="pill pill-muted">Coming soon</span>
+              </li>
+              <li>
+                <span>Lecture notes / reading guide</span>
+                <span class="pill pill-muted">Coming soon</span>
+              </li>
+              <li>
+                <span>Code snippets / notebooks</span>
+                <span class="pill pill-muted">Coming soon</span>
+              </li>
+              <li>
+                <span>Example policies &amp; workflows</span>
+                <span class="pill pill-muted">Coming soon</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="materials-column">
+            <h3>Recordings &amp; logistics</h3>
+            <ul class="resource-list">
+              <li>
+                <span>Tutorial recording (NeurIPS)</span>
+                <span class="pill pill-muted">Link will be posted if available</span>
+              </li>
+              <li>
+                <span>NeurIPS program entry</span>
+                <a class="pill pill-link" href="https://neurips.cc/" target="_blank" rel="noopener">
+                  View on neurips.cc
+                </a>
+              </li>
+            </ul>
+
+            <h3 class="mt-lg">Reading list</h3>
+            <p class="small-muted">
+              We will post a curated reading list (technical and legal) here ahead of the tutorial.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact &amp; updates</h2>
+        <p>
+          This site will be updated with the finalized schedule, materials, and logistics
+          as NeurIPS 2025 approaches.
+        </p>
+        <ul class="bullet-list">
+          <li>
+            <strong>Questions about the tutorial?</strong><br>
+            Please contact the organizers (contact details to be added).
+          </li>
+          <li>
+            <strong>Conference logistics:</strong><br>
+            See the official NeurIPS 2025 website for registration, venue, and schedule details.
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>NeurIPS 2025 Tutorial</strong><br>
+        Data Privacy, Memorization, and Copyright in Generative AI
+      </div>
+      <div class="footer-meta">
+        <span>San Diego, California, USA</span>
+        <span>&middot;</span>
+        <span>December 2–7, 2025</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
