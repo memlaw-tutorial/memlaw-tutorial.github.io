@@ -371,7 +371,7 @@ h1, h2, h3, h4 {
 }
 
 .card-grid-panel {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
 .card {
@@ -421,8 +421,8 @@ h1, h2, h3, h4 {
 }
 
 .card-grid-panel .card-photo {
-  width: 90px;
-  height: 90px;
+  width: 80px;
+  height: 80px;
 }
 
 .card-affiliation {
